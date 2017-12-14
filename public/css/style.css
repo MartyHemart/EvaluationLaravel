@@ -1,0 +1,48 @@
+
+body{
+  background: grey;
+}
+
+
+h1 {
+  background: #0045a2;
+  text-align: center;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+/* Debut du menu  */
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.menuOne {
+    background-color: #060606;
+}
+.barOne {
+  position: fixed !important;
+}
+/* fin du menu  */
+
+.insertOne {
+  width: 100px;
+  margin: 0 auto;
+}
