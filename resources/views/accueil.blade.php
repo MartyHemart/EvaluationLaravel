@@ -1,7 +1,7 @@
 @extends('layouts.base')
 @section('title', 'Accueil')
 @section('main')
-  <h1><img src="images/logo.png">Liste des Personnage</h1>
+  <h1><img src="images/logo.png">Liste des Personnages</h1>
   <div class="container tableau">
     <table class="table table-hover table-dark">
   <thead>

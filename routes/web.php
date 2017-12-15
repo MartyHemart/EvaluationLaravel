@@ -24,3 +24,5 @@ Route::post('/perso/update', 'PersoController@updateOneAction');
 
 Route::get('contact', 'ContactController@getForm');
 Route::post('contact', 'ContactController@postForm');
+
+Route::get('/bonus', 'BonusController@index');

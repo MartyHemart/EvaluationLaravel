@@ -17,9 +17,9 @@
     <footer>
      <div class="footerMenu">
        <div class="imageDoc">
-       <img class="roundedImage"src="images/doc1.jpg" alt="le doc">
-       <img class="roundedImage"src="images/doc2.jpg" alt="le doc">
-       <img class="roundedImage"src="images/marty.jpg" alt="Marty">
+       <a href="{{"bonus"}}"><img class="roundedImage"src="images/doc1.jpg" alt="le doc"></a>
+       <a href="{{"bonus"}}"><img class="roundedImage"src="images/doc2.jpg" alt="le doc"></a>
+       <a href="{{"bonus"}}"><img class="roundedImage"src="images/marty.jpg" alt="Marty"></a>
        <div>
      </div>
     </footer>

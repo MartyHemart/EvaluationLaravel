@@ -10,3 +10,6 @@ J'ai aussi du mal avec le langage du "laravel collective" ont peut voir dans mes
 # Mes points forts :
 
 j'arrive maintenant à bien faire la différence entre les controllers, les views et les routes pour pouvoir tout mettre en place.
+
+### Je suis heureux que mon application functionne !
+# Joyeux Noêl & Bonne Année ! 

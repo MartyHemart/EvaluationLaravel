@@ -88,3 +88,10 @@ footer {
 .contactForm{
   margin: 0 auto !important;
 }
+
+
+/* Bonus */
+.bonus {
+  width: 25%;
+  margin: 0 auto;
+}
