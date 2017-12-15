@@ -14,7 +14,15 @@
     <main>
       @yield('main')
     </main>
-    <footer></footer>
+    <footer>
+     <div class="footerMenu">
+       <div class="imageDoc">
+       <img class="roundedImage"src="images/doc1.jpg" alt="le doc">
+       <img class="roundedImage"src="images/doc2.jpg" alt="le doc">
+       <img class="roundedImage"src="images/marty.jpg" alt="Marty">
+       <div>
+     </div>
+    </footer>
   </body>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js"></script>

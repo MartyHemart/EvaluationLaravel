@@ -12,7 +12,7 @@
 */
 
 
-Route::get('/create', 'PersoController@create');
+Route::get('/create', 'CreateController@index');
 Route::post('perso/insert', 'PersoController@insertOne');
 
 Route::get('/', 'BaseController@index');
@@ -20,3 +20,7 @@ Route::get('/perso/delete/{id}', 'PersoController@deleteOne');
 
 Route::get('/perso/update/{id}', 'PersoController@updateOne');
 Route::post('/perso/update', 'PersoController@updateOneAction');
+
+
+Route::get('contact', 'ContactController@getForm');
+Route::post('contact', 'ContactController@postForm');

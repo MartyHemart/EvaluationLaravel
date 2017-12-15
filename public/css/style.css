@@ -9,7 +9,7 @@ h1 {
   text-align: center;
 }
 
-
+/* Debut du menu  */
 ul {
     list-style-type: none;
     margin: 0;
@@ -17,7 +17,7 @@ ul {
     overflow: hidden;
     background-color: #333;
 }
-/* Debut du menu  */
+
 li {
     float: left;
 }
@@ -45,4 +45,46 @@ li a:hover:not(.active) {
 .insertOne {
   width: 100px;
   margin: 0 auto;
+}
+ /* Formulaire create */
+.form-taille {
+    width: 130% !important;
+}
+ /* formulaire update */
+.form-taille-update {
+  width: 160% !important;
+}
+/* footer */
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footerMenu{
+  background: #b5b5b5;
+}
+
+.roundedImage{
+    overflow:hidden;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:50px;
+    width:90px;
+    height:90px;
+}
+
+.imageDoc {
+  width: 15%;
+  margin: 0 auto;
+
+}
+
+/* Card Contact */
+.card {
+    margin: 0 auto !important;
+}
+
+.contactForm{
+  margin: 0 auto !important;
 }

@@ -7,10 +7,10 @@
   <thead>
     <tr class="table-primary">
       <th scope="col">#</th>
-      <th scope="col">Prénom</th>
+      <th scope="col">Nom/Prénom</th>
       <th scope="col">Rôle</th>
       <th scope="col">Age</th>
-      <th scope="col">film</th>
+      <th scope="col">Film</th>
       <th scope="col">Supp</th>
       <th scope="col">Update<th>
     </tr>
@@ -27,7 +27,7 @@
       <td>
       @foreach($personnage->films as $film)
 
-      {{ $film->nom }}
+      {{ $film->film }}<br>
       @endforeach
       </td>
       @else
@@ -37,7 +37,7 @@
         <form action="/perso/delete/{{$personnage->id}}" method="get">
         <button type="submit" >
           {{ csrf_field() }}
-          <i class="fa fa-trash-o" aria-hidden="true"></i>
+          <i class="fa fa-trash-o fa-3x" aria-hidden="true"></i>
         </button>
         </form>
       </td>
@@ -45,7 +45,7 @@
         <form action="/perso/update/{{$personnage->id}}" method="get">
         <button type="submit" >
           {{ csrf_field() }}
-          <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+          <i class="fa fa-pencil-square-o fa-3x" aria-hidden="true"></i>
         </button>
         </form>
       </td>

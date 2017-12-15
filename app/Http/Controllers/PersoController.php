@@ -21,7 +21,7 @@ class PersoController extends Controller
           $personnage->role = $request->role;
           $personnage->age = $request->age;
           $personnage->save();
-          $personnage->films()->attach($request->films);
+          $personnage->films()->attach($request->film);
           return redirect('/');
       }
       public function deleteOne(Request $request, $id)
@@ -37,9 +37,9 @@ class PersoController extends Controller
         $filmsAll = Film::all();
         $films = [];
         foreach ($filmsAll as $value) {
-        $films[$value->id] = $value->film;
+          $films[$value->id] = $value->film;
        }
-        return view('/update', ['films' => $films, 'personnage' => $personnage]);
+        return view('update', ['films' => $films, 'personnage' => $personnage]);
        }
 
       public function updateOneAction(Request $request)
@@ -50,7 +50,7 @@ class PersoController extends Controller
         $personnage->age = $request->age;
         $personnage->save();
         $personnage->films()->detach();
-        $personnage->films()->attach($request->films);
+        $personnage->films()->attach($request->film);
         return redirect('/');
       }
 
