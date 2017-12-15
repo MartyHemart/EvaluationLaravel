@@ -12,7 +12,7 @@ class ContactController extends Controller
           return view('contact');
         }
 
-      public function postForm(ContactRequest $request)
+      public function postForm(ContactRequest $request) // function  pour permettre l'envoi du e-mail
         {
           Mail::send('email_contact', $request->all(), function($message)
           {

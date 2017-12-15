@@ -9,12 +9,12 @@ use App\Film;
 
 class PersoController extends Controller
 {
-        public function create()
+        public function create()  // Pour afficher la page "create"
         {
           return view('/create');
         }
 
-      public function insertOne(Request $request)
+      public function insertOne(Request $request) // Pour inserer les éléments (les personnages)
         {
           $personnage = new Personnage;
           $personnage->nom = $request->nom;
@@ -24,14 +24,14 @@ class PersoController extends Controller
           $personnage->films()->attach($request->film);
           return redirect('/');
       }
-      public function deleteOne(Request $request, $id)
+      public function deleteOne(Request $request, $id) // Pour supprimer les élements de la base de données
         {
         $personnage = Personnage::find($id);
         $personnage->delete();
         return redirect('/');
         }
 
-      public function updateOne(Request $request, $id)
+      public function updateOne(Request $request, $id) // Pour récuperer les élements dans les formulaires pour effectuer "updateOneAction"
        {
         $personnage = Personnage::find($id);
         $filmsAll = Film::all();
@@ -42,7 +42,7 @@ class PersoController extends Controller
         return view('update', ['films' => $films, 'personnage' => $personnage]);
        }
 
-      public function updateOneAction(Request $request)
+      public function updateOneAction(Request $request) // Pour modifier les élements déjà inscrit dans la base de données
       {
         $personnage = Personnage::find($request->id);
         $personnage->nom = $request->nom;
