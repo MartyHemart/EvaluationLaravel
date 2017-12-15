@@ -11,5 +11,7 @@ J'ai aussi du mal avec le langage du "laravel collective" ont peut voir dans mes
 
 j'arrive maintenant à bien faire la différence entre les controllers, les views et les routes pour pouvoir tout mettre en place.
 
+ps: la lecture d'envoi de e-mail se trouve dans le dossier storage/logs/laravel.log (tout en bas du fichier)
+
 ### Je suis heureux que mon application functionne !
 # Joyeux Noêl & Bonne Année !
